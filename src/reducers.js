@@ -1,10 +1,10 @@
+import { combineReducers } from 'redux';
 import {
     FILTER_CHANGED, 
     MOVIES_LOADED, 
     FAVORITED, 
     UNFAVORITED
 } from './actions';
-import { combineReducers } from 'redux';
 
 export function movies(state=[], action) {
     switch (action.type) {
